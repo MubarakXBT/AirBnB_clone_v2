@@ -4,7 +4,9 @@ used in deployment with aid of fabrics
 """
 from os import path
 from fabric.api import *
-from datettime import datetime
+"""
+moduel fabric, os
+"""
 
 
 env.hosts = ['107.22.144.189', '52.3.241.179']
