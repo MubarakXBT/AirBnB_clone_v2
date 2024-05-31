@@ -20,7 +20,7 @@ def do_deploy(archive_path):
                 return False
 
         # upload archive
-        put(archive_path, /tmp/)
+        put(archive_path, '/tmp/')
 
         # getting time_stamp
         timestamp = archive_path[-18:-4]
