@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """
+used in deployment with aid of fabrics
 """
 from os import path
 from fabric.api import *
@@ -13,6 +14,7 @@ env.key_filename = '~/.ssh/id_rsa'
 
 def do_deploy(archive_path):
     """
+    deploy a static file to server
     """
     try:
         if not (path.exists(archive_path)):
