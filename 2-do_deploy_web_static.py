@@ -4,13 +4,10 @@ used in deployment with aid of fabrics
 """
 from os import path
 from fabric.api import *
-"""
-moduel fabric, os
-"""
 
 
 env.hosts = ['107.22.144.189', '52.3.241.179']
-env.user = ubuntu
+env.user = 'ubuntu'
 env.key_filename = '~/.ssh/id_rsa'
 
 
