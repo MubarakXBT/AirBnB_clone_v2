@@ -34,12 +34,12 @@ def do_deploy(archive_path):
         # delete archive
         run('sudo rm /tmp/web_static_{}.tgz'.format(timestamp))
 
-         # move contents into host web_static
-         run('sudo mv /data/web_static/releases/web_static_{}/web_static/* \
+        # move contents into host web_static
+        run('sudo mv /data/web_static/releases/web_static_{}/web_static/* \
                  /data/web_static/releases/web_static_{}/'.format(timestamp, timestamp))
 
-          # remove extraneous web_static dir
-          run('sudo rm -rf /data/web_static/releases/web_static_{}/web_static'
+        # remove extraneous web_static dir
+        run('sudo rm -rf /data/web_static/releases/web_static_{}/web_static'
               .format(timestamp))
 
         # delete exisiting symbolic link
